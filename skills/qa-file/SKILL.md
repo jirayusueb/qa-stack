@@ -58,7 +58,10 @@ parallelizable. File in dependency order so Blocked by cites real numbers.
 ## Before filing
 
 1. Attach the media from `qa-repro`. An issue without its evidence waits.
-2. Spawn a fresh-context reviewer through `qa-delegate` when a spawn tool
+2. Redact. Scan every media file for secrets: tokens, credentials, personal
+   data visible in screenshots or recordings. Redact or crop before the
+   attach. An unscanned file does not leave the repository.
+3. Spawn a fresh-context reviewer through `qa-delegate` when a spawn tool
    exists (`docs/harness.md` names it per host). The reviewer gets the body
    and the standard. Fix what it flags.
 3. File without asking for a review of the final text. Share the URLs.

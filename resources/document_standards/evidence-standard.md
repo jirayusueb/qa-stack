@@ -31,6 +31,13 @@ resolved explicitly, never averaged away.
 - Media attaches to the issue and the body links it.
 - Browser evidence rides with its console and network captures.
 
+## Redaction
+
+Media is scanned for secrets before it leaves the repository: tokens,
+credentials, personal data visible in frames. Redact or crop, then attach.
+An unscanned file does not attach. Review `evidence/` again before
+publishing the repository.
+
 ## Research before writing
 
 Any plan, spec, or issue written without grounded knowledge of the topic

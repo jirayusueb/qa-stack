@@ -24,6 +24,8 @@ const SUITES = {
   ask: { min: 8 },
   browser: { min: 4 },
   delegation: { min: 5 },
+  drift: { min: 5 },
+  report: { min: 4 },
   injection: { min: 6 },
 };
 

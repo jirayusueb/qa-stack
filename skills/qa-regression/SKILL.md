@@ -23,9 +23,9 @@ The test is the memory of the bug.
 ## Flakes
 
 A test that fails intermittently after the fix is a flake. Quarantine it:
-mark it, move it to the quarantine list, and record the trigger if known.
-Quarantine is triage, not a parking lot. Each quarantined test carries an
-open question. Retrying until green is forbidden.
+add a row to `docs/qa/quarantine.md` with the trigger if known and its open
+question. Quarantine is triage, not a parking lot. Each quarantined test
+carries an open question. Retrying until green is forbidden.
 
 ## Scope
 

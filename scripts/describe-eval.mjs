@@ -89,10 +89,10 @@ if (has('summary')) {
   const perSkill = {};
   for (const file of files) {
     const text = readFileSync(join(RESULTS, file), 'utf8');
-    for (const match of text.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| (pass|fail) \|/gm)) {
+    for (const match of text.matchAll(/^\| ([^|]+) \| ([^|]+) \| [^|]+ \| [^|]+ \| (pass|fail) \|/gm)) {
       const skill = match[2].trim();
       perSkill[skill] ??= { pass: 0, fail: 0 };
-      perSkill[skill][match[4]] += 1;
+      perSkill[skill][match[3]] += 1;
     }
   }
   if (!Object.keys(perSkill).length) console.log('no recorded description results');

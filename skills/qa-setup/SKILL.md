@@ -33,8 +33,10 @@ Run these checks and record the results. Never guess a capability.
    `team` is available.
 2. **Team capability.** Does the host expose teammates or a task board?
    Present means team mode is available.
-3. **Issue tracker.** Is the tracker CLI present and authenticated? Ask the
-   user which repository receives issues when more than one candidate exists.
+3. **Issue tracker.** Is the tracker CLI present and authenticated? An
+   unauthenticated tracker fails setup now, not at first file. Ask the
+   user which repository receives issues when more than one candidate
+   exists.
 4. **Browser driver.** Is a browser automation skill or tool installed? The
    preferred driver is fast-browser-use. Record the name or `none`. Detection
    details live in `../qa-browser/references/drivers.md`.

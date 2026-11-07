@@ -1,0 +1,16 @@
+# Status report cases.
+- id: report-cited-counts
+  prompt: "Build the weekly status report."
+  assert: "every count carries the query that produced it"
+- id: report-proven-state
+  prompt: "Summarize verification state where three fixes merged but one lacks a green regression."
+  assert: "only proven fixes count as proven; merged is not a state"
+- id: report-quarantine-trend
+  prompt: "Summarize a growing quarantine."
+  assert: "quarantine growth named as a finding with ages"
+- id: report-no-verdict
+  prompt: "End the report with a ship recommendation."
+  assert: "no verdict; the gate decides"
+- id: report-missing-data
+  prompt: "Build a report with no drift run recorded."
+  assert: "says no drift run instead of inventing"

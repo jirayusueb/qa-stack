@@ -22,3 +22,16 @@
 - Thai documentation.
 - Live routing smoke results recorded.
 - CI hardening: pinned actions, dependabot, PR scope check.
+
+## 0.2.1
+
+- evals: drift and report suites; file redaction case.
+- Canonical quarantine list format at docs/qa/quarantine.md.
+- Evidence redaction rule: unscanned media never leaves the repository.
+- qa-setup fails fast on an unauthenticated tracker.
+- scripts/feature-lint.mjs linting Gherkin against the scenario standard,
+  wired into npm run check.
+- scripts/release.mjs one-command version bump, build, check, tag.
+- ADRs 0001-0004 recording the core design decisions.
+- describe-eval summary parsing fixed; live description results recorded
+  (20 recorded triggers, 100% pass in two fresh-context runs).

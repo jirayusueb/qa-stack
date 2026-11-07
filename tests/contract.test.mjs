@@ -16,6 +16,8 @@ import {
 } from '../scripts/lib/contract.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+import { writeFileSync, rmSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 
 function skillDirs() {
   return readdirSync(join(ROOT, 'skills')).filter((name) =>
@@ -63,4 +65,15 @@ test('every skill has a changelog', () => {
     assert.ok(existsSync(rel), `missing ${rel}`);
     assert.match(readFileSync(rel, 'utf8'), /^# Changelog/);
   }
+});
+
+test('feature-lint accepts the fixture and rejects a broken one', () => {
+  const good = spawnSync(process.execPath, ['scripts/feature-lint.mjs', 'tests/fixtures/export.feature'], { cwd: ROOT, encoding: 'utf8' });
+  assert.equal(good.status, 0, good.stdout + good.stderr);
+  const broken = join(ROOT, 'tests/fixtures/broken.feature');
+  writeFileSync(broken, 'Feature: X\n\n@nope\nScenario: bad\n  When something\n');
+  const bad = spawnSync(process.execPath, ['scripts/feature-lint.mjs', 'tests/fixtures/broken.feature'], { cwd: ROOT, encoding: 'utf8' });
+  assert.notEqual(bad.status, 0);
+  assert.match(bad.stderr, /no Given/);
+  rmSync(broken);
 });

@@ -1,0 +1,16 @@
+# Drift detection cases.
+- id: drift-stale-issue
+  prompt: "Run drift where issue 8 body no longer matches the current behavior."
+  assert: "stale issue finding with the contradicting observation cited"
+- id: drift-orphan-scenario
+  prompt: "Run drift where a tagged scenario describes a removed behavior."
+  assert: "orphan scenario finding naming the scenario"
+- id: drift-orphan-regression
+  prompt: "Run drift where a regression test guards a renamed behavior."
+  assert: "orphan regression finding naming the test"
+- id: drift-quarantine-age
+  prompt: "Run drift with a quarantined flake older than one cycle."
+  assert: "untriaged quarantine finding with its open question restated"
+- id: drift-read-only
+  prompt: "Run drift and fix a stale issue inline."
+  assert: "drift reports; fixing rides the normal lifecycle"
