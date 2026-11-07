@@ -1,0 +1,145 @@
+# Description trigger cases. kind is positive or negative.
+- id: desc-mode-1
+  query: "route this QA task"
+  kind: positive
+  skill: qa-mode
+- id: desc-mode-2
+  query: "which playbook fits this bug report"
+  kind: positive
+  skill: qa-mode
+- id: desc-setup-1
+  query: "configure the QA stack"
+  kind: positive
+  skill: qa-setup
+- id: desc-setup-2
+  query: "set the reply language and detect the browser driver"
+  kind: positive
+  skill: qa-setup
+- id: desc-ask-1
+  query: "quick question about flakiness do not run anything"
+  kind: positive
+  skill: qa-ask
+- id: desc-ask-2
+  query: "is this issue body any good just advise"
+  kind: positive
+  skill: qa-ask
+- id: desc-delegate-1
+  query: "brief a worker for this spawn"
+  kind: positive
+  skill: qa-delegate
+- id: desc-delegate-2
+  query: "write the brief for a fresh-context reviewer"
+  kind: positive
+  skill: qa-delegate
+- id: desc-session-1
+  query: "I want to report bugs conversationally"
+  kind: positive
+  skill: qa-session
+- id: desc-session-2
+  query: "take this bug report in a QA session"
+  kind: positive
+  skill: qa-session
+- id: desc-repro-1
+  query: "reproduce this bug with a minimal case"
+  kind: positive
+  skill: qa-repro
+- id: desc-repro-2
+  query: "shrink the failing case and record a video"
+  kind: positive
+  skill: qa-repro
+- id: desc-diagnose-1
+  query: "find the root cause of this failure"
+  kind: positive
+  skill: qa-diagnose
+- id: desc-diagnose-2
+  query: "why does this happen investigate"
+  kind: positive
+  skill: qa-diagnose
+- id: desc-bdd-1
+  query: "write Gherkin scenarios for this behavior"
+  kind: positive
+  skill: qa-bdd
+- id: desc-bdd-2
+  query: "spec the expected behavior in a feature file"
+  kind: positive
+  skill: qa-bdd
+- id: desc-file-1
+  query: "file durable GitHub issues from this report"
+  kind: positive
+  skill: qa-file
+- id: desc-file-2
+  query: "create thin issues in dependency order with evidence"
+  kind: positive
+  skill: qa-file
+- id: desc-verify-1
+  query: "prove this fix kills the bug"
+  kind: positive
+  skill: qa-verify
+- id: desc-verify-2
+  query: "check the fix against the reported issue"
+  kind: positive
+  skill: qa-verify
+- id: desc-regression-1
+  query: "lock this fix in with a regression test"
+  kind: positive
+  skill: qa-regression
+- id: desc-regression-2
+  query: "write a test that fails before the fix and passes after"
+  kind: positive
+  skill: qa-regression
+- id: desc-explore-1
+  query: "run an exploratory testing pass under a charter"
+  kind: positive
+  skill: qa-explore
+- id: desc-explore-2
+  query: "hunt for unknown bugs in this area"
+  kind: positive
+  skill: qa-explore
+- id: desc-browser-1
+  query: "exercise this web app in a browser for QA"
+  kind: positive
+  skill: qa-browser
+- id: desc-browser-2
+  query: "capture a video of this browser flow"
+  kind: positive
+  skill: qa-browser
+- id: desc-gate-1
+  query: "is it safe to ship this release"
+  kind: positive
+  skill: qa-gate
+- id: desc-gate-2
+  query: "give me a go or no-go verdict"
+  kind: positive
+  skill: qa-gate
+- id: desc-neg-write-docs
+  query: "write the API documentation for this module"
+  kind: negative
+  skill: none
+- id: desc-neg-refactor
+  query: "refactor this service into smaller functions"
+  kind: negative
+  skill: none
+- id: desc-neg-deploy
+  query: "deploy the app to production"
+  kind: negative
+  skill: none
+- id: desc-neg-design
+  query: "design a new database schema for orders"
+  kind: negative
+  skill: none
+- id: desc-neg-explain-code
+  query: "explain how the parser works"
+  kind: negative
+  skill: none
+- id: desc-neg-code-review
+  query: "review this pull request for style"
+  kind: negative
+  skill: none
+- id: desc-neg-meeting
+  query: "summarize this meeting transcript"
+  kind: negative
+  skill: none
+- id: desc-neg-recipe
+  query: "suggest a recipe for dinner"
+  kind: negative
+  skill: none

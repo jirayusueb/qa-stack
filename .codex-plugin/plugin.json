@@ -1,0 +1,43 @@
+{
+  "name": "qa-stack",
+  "version": "0.1.0",
+  "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases.",
+  "author": {
+    "name": "QA Stack contributors"
+  },
+  "homepage": "https://github.com/jirayusueb/qa-stack",
+  "repository": "https://github.com/jirayusueb/qa-stack",
+  "support": "https://github.com/jirayusueb/qa-stack/issues",
+  "license": "Apache-2.0",
+  "keywords": [
+    "agent-skills",
+    "qa",
+    "bdd",
+    "bug-triage",
+    "evidence",
+    "subagents"
+  ],
+  "documentationUrl": "https://github.com/jirayusueb/qa-stack/blob/main/docs/index.md",
+  "skills": "./skills/",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "QA Stack",
+    "shortDescription": "Intake, reproduce, verify, and gate",
+    "longDescription": "Evidence-first QA for coding agents. One lifecycle loop: intake bugs, ground expected behavior in cited sources, reproduce with video and image evidence, diagnose root causes, spec behavior in Gherkin, file durable issues, verify fixes, and gate releases. Runs solo, with subagents, or as a team. Uses your host's models and permissions. Fresh-context review requires isolated subagents.",
+    "developerName": "QA Stack contributors",
+    "brandColor": "#D9541E",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Intake and file bug reports",
+      "Reproduce and diagnose failures",
+      "Spec behavior with BDD",
+      "Verify fixes and gate releases"
+    ],
+    "websiteURL": "https://github.com/jirayusueb/qa-stack",
+    "supportURL": "https://github.com/jirayusueb/qa-stack/issues",
+    "privacyPolicyURL": "https://github.com/jirayusueb/qa-stack/blob/main/docs/privacy.md",
+    "termsOfServiceURL": "https://github.com/jirayusueb/qa-stack/blob/main/LICENSE",
+    "composerIcon": "./.cursor-plugin/assets/icon.svg",
+    "logo": "./.cursor-plugin/assets/icon.svg"
+  }
+}

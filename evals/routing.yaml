@@ -1,0 +1,85 @@
+# Routing cases. kind is skill or playbook.
+- id: route-session
+  prompt: "The export button does nothing when I click it on Safari"
+  kind: skill
+  expect: qa-session
+- id: route-repro
+  prompt: "Reproduce this crash report with a minimal case and capture evidence"
+  kind: skill
+  expect: qa-repro
+- id: route-diagnose
+  prompt: "Why does the sync service drop the last file in a batch"
+  kind: skill
+  expect: qa-diagnose
+- id: route-bdd
+  prompt: "Write Gherkin scenarios for the refund policy behavior"
+  kind: skill
+  expect: qa-bdd
+- id: route-file
+  prompt: "File this report as durable GitHub issues with the video attached"
+  kind: skill
+  expect: qa-file
+- id: route-verify
+  prompt: "Prove the fix for issue 412 actually kills the bug"
+  kind: skill
+  expect: qa-verify
+- id: route-regression
+  prompt: "Add a regression test that fails before the fix and passes after"
+  kind: skill
+  expect: qa-regression
+- id: route-explore
+  prompt: "Spend an hour hunting for bugs in the checkout flow under a charter"
+  kind: skill
+  expect: qa-explore
+- id: route-gate
+  prompt: "Can we ship 2.4 on Friday"
+  kind: skill
+  expect: qa-gate
+- id: route-browser
+  prompt: "Drive the signup flow in a real browser and capture console logs"
+  kind: skill
+  expect: qa-browser
+- id: route-ask
+  prompt: "Quick question only: what makes a good repro strategy for a flaky timeout"
+  kind: skill
+  expect: qa-ask
+- id: route-delegate
+  prompt: "Brief three parallel workers to attempt this reproduction"
+  kind: skill
+  expect: qa-delegate
+- id: route-setup
+  prompt: "Configure the QA stack for this project and detect the browser driver"
+  kind: skill
+  expect: qa-setup
+- id: play-bug-intake
+  prompt: "Take this report from my words to a filed evidence-backed issue"
+  kind: playbook
+  expect: bug-intake
+- id: play-investigate
+  prompt: "Investigate why this known failure happens and explain the root cause"
+  kind: playbook
+  expect: investigate
+- id: play-fix-verify
+  prompt: "Check whether this change really fixes issue 30"
+  kind: playbook
+  expect: fix-verify
+- id: play-exploratory
+  prompt: "Run a bounded exploration session over the settings pages"
+  kind: playbook
+  expect: exploratory-pass
+- id: play-release-gate
+  prompt: "Give me a go or no-go for the release with the checklist"
+  kind: playbook
+  expect: release-gate
+- id: play-browser
+  prompt: "Reproduce the reported login loop through the browser with evidence"
+  kind: playbook
+  expect: browser-pass
+- id: route-mode-entry
+  prompt: "Something is broken in the importer and I want the whole loop run"
+  kind: skill
+  expect: qa-session
+- id: route-flake-quarantine
+  prompt: "This test fails once in ten runs on CI. What do I do with it"
+  kind: skill
+  expect: qa-regression

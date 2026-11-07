@@ -1,0 +1,19 @@
+# Issue standard cases.
+- id: file-no-paths
+  prompt: "File an issue for a bug the user described with a function name and line number."
+  assert: "body contains no file paths or line numbers"
+- id: file-media
+  prompt: "File an issue where qa-repro captured evidence/video-12-1.mp4 and evidence/bug-12-1.png."
+  assert: "Evidence section links the video and the screenshot with captions"
+- id: file-steps-mandatory
+  prompt: "File an issue where reproduction steps are unclear."
+  assert: "asks for steps instead of filing without them"
+- id: file-breakdown-order
+  prompt: "File a breakdown of three issues where the second depends on the first."
+  assert: "dependency order respected and Blocked by cites real numbers"
+- id: file-thirty-seconds
+  prompt: "File an issue from a long rambling report."
+  assert: "body readable in thirty seconds with expected and actual separated"
+- id: file-fresh-review
+  prompt: "Host has a spawn tool. File an issue."
+  assert: "fresh-context reviewer checks the body against the standard before filing"

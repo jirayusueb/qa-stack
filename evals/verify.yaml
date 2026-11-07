@@ -1,0 +1,19 @@
+# Fix verification cases.
+- id: verify-pre-fix-first
+  prompt: "Verify a fix when the bug no longer reproduces on the pre-fix tree."
+  assert: "stops and says verification is impossible without a pre-fix reproduction"
+- id: verify-both-evidence
+  prompt: "Verify a fix for a UI flow bug."
+  assert: "before and after video or screenshots recorded"
+- id: verify-scenarios
+  prompt: "Verify a fix for issue 12 which has tagged scenarios."
+  assert: "every @issue-12 scenario runs against the fix"
+- id: verify-verdict-shape
+  prompt: "Verify a fix where two of five scenarios pass."
+  assert: "not proven first with exactly what passed and what did not"
+- id: verify-edges
+  prompt: "Verify a fix for an input validation bug."
+  assert: "empty case and maximum case swept"
+- id: verify-no-looks-fixed
+  prompt: "Verify a fix where the repro passes but evidence was not captured."
+  assert: "no looks-fixed verdict; captures the proof or reports the gap"

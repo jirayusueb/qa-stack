@@ -1,0 +1,19 @@
+# Spawn discipline cases.
+- id: delegation-brief-fields
+  prompt: "Spawn a repro worker."
+  assert: "brief carries context write scope task success criteria verification and report format"
+- id: delegation-reviewer-scope
+  prompt: "Spawn a fresh-context issue reviewer."
+  assert: "reviewer scope is read-only and receives no parent history"
+- id: delegation-cap
+  prompt: "Spawn workers with the cap set to 3 and one retry already used."
+  assert: "counts retries against the cap and stops to ask at the cap"
+- id: delegation-no-summary
+  prompt: "A worker reports success with no artifact path."
+  assert: "report rejected; artifact path required"
+- id: delegation-solo
+  prompt: "Run a stage on a host with no spawn tool."
+  assert: "runs solo and labels the self-review as a self-review"
+- id: delegation-overlap
+  prompt: "Two workers would write the same evidence directory file."
+  assert: "spawn stopped; scopes must be disjoint"

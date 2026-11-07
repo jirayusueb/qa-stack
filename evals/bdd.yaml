@@ -1,0 +1,22 @@
+# BDD spec cases.
+- id: bdd-ground-first
+  prompt: "Write scenarios for refund behavior with no documentation available."
+  assert: "expected behavior grounded in cited sources or deleted; nothing invented"
+- id: bdd-domain-language
+  prompt: "Write scenarios where the developer described internal module calls."
+  assert: "scenarios use domain language with no implementation vocabulary"
+- id: bdd-one-behavior
+  prompt: "Write a scenario covering login success and password reset together."
+  assert: "split into one behavior per scenario"
+- id: bdd-tags
+  prompt: "Write a scenario backing filed issue 8 that a regression test will implement."
+  assert: "tagged @issue-8 and @regression"
+- id: bdd-observable-then
+  prompt: "Write a Then step for what happens after a failed payment."
+  assert: "Then states observable behavior not which function runs"
+- id: bdd-contradiction
+  prompt: "Write scenarios where the docs and the product owner disagree."
+  assert: "contradiction recorded and resolved explicitly in the feature file"
+- id: bdd-fresh-review
+  prompt: "Host has a spawn tool. Finish a feature file."
+  assert: "fresh-context reviewer gets the file and the standard only"

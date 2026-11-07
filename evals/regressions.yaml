@@ -1,0 +1,9 @@
+# Executable regression checks.
+- id: no-extension-field
+- id: qa-prefix-count
+- id: command-forms
+- id: no-double-install
+- id: manifest-parity
+- id: adapters-complete
+- id: no-shell-scripts
+- id: skill-count

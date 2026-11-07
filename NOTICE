@@ -1,0 +1,25 @@
+QA Stack
+Copyright 2026 QA Stack contributors
+
+This product includes material adapted from the projects below.
+
+egm-stack (jirayusueb/egm-stack)
+Copyright 2026 EGM Stack contributors
+Licensed under the Apache License, Version 2.0.
+The repository tooling (scripts/build.mjs, scripts/validate.mjs,
+scripts/eval.mjs, scripts/run-evals.mjs, scripts/describe-eval.mjs,
+scripts/sync-assets.mjs, scripts/skill-graph.mjs,
+scripts/check-injection.mjs, scripts/check-regressions.mjs,
+scripts/check-skill-changelog.mjs, scripts/lib/frontmatter.mjs,
+scripts/lib/yaml.mjs) and the repository layout are adapted from
+egm-stack and rewritten for the QA Stack skill set.
+
+fast-browser-use (APUS-AI-Lab/fast-browser-use)
+QA Stack references fast-browser-use as an optional external browser
+driver. This product does not redistribute fast-browser-use.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0

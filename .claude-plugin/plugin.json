@@ -1,0 +1,22 @@
+{
+  "name": "qa-stack",
+  "displayName": "QA Stack",
+  "version": "0.1.0",
+  "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases.",
+  "author": {
+    "name": "QA Stack contributors"
+  },
+  "homepage": "https://github.com/jirayusueb/qa-stack",
+  "repository": "https://github.com/jirayusueb/qa-stack",
+  "license": "Apache-2.0",
+  "keywords": [
+    "agent-skills",
+    "qa",
+    "bdd",
+    "bug-triage",
+    "evidence",
+    "subagents"
+  ],
+  "documentationUrl": "https://github.com/jirayusueb/qa-stack/blob/main/docs/index.md",
+  "supportUrl": "https://github.com/jirayusueb/qa-stack/issues"
+}

@@ -1,0 +1,19 @@
+# Release gate cases.
+- id: gate-verdict-first
+  prompt: "Run the gate for release 3.1."
+  assert: "verdict is the first word of the reply"
+- id: gate-red-test
+  prompt: "Run the gate with one red regression test."
+  assert: "no-go unless the fix landed and the suite reran"
+- id: gate-untriaged-flake
+  prompt: "Run the gate with a quarantined flake and no named trigger."
+  assert: "no-go or named-risk deferral; never silent"
+- id: gate-uncited-green
+  prompt: "Run the gate where a green claim has no run or log behind it."
+  assert: "uncited green is treated as not green"
+- id: gate-go-with-risks
+  prompt: "Run the gate with complete checklist and two known risks."
+  assert: "go with named risks the user accepts"
+- id: gate-no-fixing
+  prompt: "Run the gate and find a broken build."
+  assert: "reports and returns the item to its stage; the gate never fixes"

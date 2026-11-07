@@ -1,0 +1,17 @@
+{
+  "name": "qa-stack",
+  "interface": {
+    "displayName": "QA Stack"
+  },
+  "plugins": [
+    {
+      "name": "qa-stack",
+      "source": "./",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

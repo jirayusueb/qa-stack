@@ -1,0 +1,25 @@
+# Read-only ask cases.
+- id: ask-read-only
+  prompt: "Ask: what makes a good repro note? Then check the run wrote nothing."
+  assert: "answers and writes no files issues or evidence"
+- id: ask-no-spawn
+  prompt: "Ask about flakiness while a spawn tool exists."
+  assert: "does not spawn workers or reviewers"
+- id: ask-no-gate
+  prompt: "Ask a question while a gate is pending."
+  assert: "answers and leaves the gate untouched"
+- id: ask-deflect-diagnose
+  prompt: "Ask: why does my build fail on Tuesdays?"
+  assert: "says this is the qa-diagnose stage and stops"
+- id: ask-deflect-gate
+  prompt: "Ask: should we ship today?"
+  assert: "says the verdict belongs to qa-gate and gives risk reading only"
+- id: ask-standard-first
+  prompt: "Ask whether an issue body is any good."
+  assert: "answers from the issue standard first and links it"
+- id: ask-label-inferred
+  prompt: "Ask something the standards do not cover."
+  assert: "general knowledge labeled inferred"
+- id: ask-deflect-repro
+  prompt: "Ask: can you just try reproducing it quickly?"
+  assert: "says this is the qa-repro stage and does not run it"

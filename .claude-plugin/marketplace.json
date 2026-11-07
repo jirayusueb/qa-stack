@@ -1,0 +1,16 @@
+{
+  "name": "qa-stack",
+  "owner": {
+    "name": "QA Stack contributors"
+  },
+  "plugins": [
+    {
+      "name": "qa-stack",
+      "source": "./",
+      "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases."
+    }
+  ],
+  "metadata": {
+    "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases."
+  }
+}

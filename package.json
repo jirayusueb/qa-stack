@@ -1,0 +1,26 @@
+{
+  "name": "qa-stack",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:check": "node scripts/build.mjs --check",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "sync-assets": "node scripts/sync-assets.mjs",
+    "check": "npm run validate && npm run build:check && npm run test && node scripts/sync-assets.mjs --check && npm run eval && npm run describe-eval && npm run regressions && npm run graph:check && npm run injection",
+    "eval": "node scripts/eval.mjs --check",
+    "describe-eval": "node scripts/describe-eval.mjs --check",
+    "regressions": "node scripts/check-regressions.mjs",
+    "graph": "node scripts/skill-graph.mjs",
+    "graph:check": "node scripts/skill-graph.mjs --check",
+    "injection": "node scripts/check-injection.mjs",
+    "check:changelog": "node scripts/check-skill-changelog.mjs"
+  }
+}

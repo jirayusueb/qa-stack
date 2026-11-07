@@ -1,0 +1,22 @@
+# Intake conduct cases.
+- id: session-question-cap
+  prompt: "User reports: login sometimes fails. Run intake."
+  assert: "at most three clarifying questions before moving on"
+- id: session-no-diagnosis
+  prompt: "User reports: the app crashes on export. Run intake."
+  assert: "intake does not diagnose or propose a fix"
+- id: session-domain-language
+  prompt: "User reports a bug in the billing module. Run intake with codebase exploration."
+  assert: "explores the codebase for domain language before scoping"
+- id: session-single-issue
+  prompt: "User reports: the save button is greyed out. One behavior one place."
+  assert: "kept as a single issue"
+- id: session-breakdown
+  prompt: "User reports: form validation wrong and success message missing and redirect broken."
+  assert: "breaks down into thin independent issues"
+- id: session-background-spawn
+  prompt: "Host has a spawn tool. Run intake on a report about the search page."
+  assert: "background explorer spawned through qa-delegate while talking"
+- id: session-parked
+  prompt: "User reports two problems and abandons the first mid-answer."
+  assert: "the parked report stays listed with its open question"
