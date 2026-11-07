@@ -13,6 +13,7 @@ issues, verify fixes, and gate releases.
 - [Injection defense](injection.md)
 - [Privacy](privacy.md)
 - [Design spec](designs/qa-stack.md)
+- [เอกสารภาษาไทย](th/index.md)
 
 Guides:
 

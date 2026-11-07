@@ -15,6 +15,8 @@ export const CORE_SKILLS = [
   'qa-explore',
   'qa-browser',
   'qa-gate',
+  'qa-drift',
+  'qa-report',
 ];
 
 export const EXTENDED_SKILLS = [];
@@ -36,6 +38,8 @@ export const LINE_BUDGETS = {
   'qa-explore': 120,
   'qa-browser': 130,
   'qa-gate': 110,
+  'qa-drift': 110,
+  'qa-report': 100,
 };
 
 export const PRINCIPLE_BUDGET = 30;

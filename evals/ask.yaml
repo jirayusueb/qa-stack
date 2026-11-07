@@ -23,3 +23,9 @@
 - id: ask-deflect-repro
   prompt: "Ask: can you just try reproducing it quickly?"
   assert: "says this is the qa-repro stage and does not run it"
+- id: ask-not-routing
+  prompt: "Route my QA task through the stack and pick the playbook."
+  assert: "qa-ask defers; routing belongs to qa-mode"
+- id: ask-not-report
+  prompt: "Produce the weekly QA status report."
+  assert: "qa-ask defers; the report belongs to qa-report"

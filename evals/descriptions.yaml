@@ -143,3 +143,23 @@
   query: "suggest a recipe for dinner"
   kind: negative
   skill: none
+- id: desc-drift-1
+  query: "do our old scenarios still match the code"
+  kind: positive
+  skill: qa-drift
+- id: desc-drift-2
+  query: "find stale issues and orphaned regression tests"
+  kind: positive
+  skill: qa-drift
+- id: desc-report-1
+  query: "give me the weekly QA status summary"
+  kind: positive
+  skill: qa-report
+- id: desc-report-2
+  query: "how many blockers are open this week with counts"
+  kind: positive
+  skill: qa-report
+- id: desc-neg-write-novel
+  query: "write a short story about a robot"
+  kind: negative
+  skill: none

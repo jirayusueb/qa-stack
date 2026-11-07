@@ -182,7 +182,7 @@ function commandsDoc(skillList, books) {
     '- omp: `/skill:<skill>`. When a name collides with another installed pack, omp exposes it as `qa-stack/<skill>`.',
     '- Codex, Cursor, OpenCode: the skill picker.',
     '',
-    'Fourteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.',
+    'Sixteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.',
     '',
   ];
   const table = (items) => {

@@ -13,3 +13,12 @@
 - Solo, subagent, and team execution modes over role-neutral skills.
 - Tooling adapted from egm-stack: build, validate, evals, injection,
   regressions, skill graph.
+
+## 0.2.0
+
+- qa-drift skill: stale issue, orphan scenario, and orphan regression
+  detection.
+- qa-report skill: cited-count status summaries.
+- Thai documentation.
+- Live routing smoke results recorded.
+- CI hardening: pinned actions, dependabot, PR scope check.

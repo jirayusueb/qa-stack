@@ -83,3 +83,11 @@
   prompt: "This test fails once in ten runs on CI. What do I do with it"
   kind: skill
   expect: qa-regression
+- id: route-drift
+  prompt: "Check whether our old issues and scenarios still match the current code"
+  kind: skill
+  expect: qa-drift
+- id: route-report
+  prompt: "Summarize QA status for this week with open blockers and quarantine depth"
+  kind: skill
+  expect: qa-report

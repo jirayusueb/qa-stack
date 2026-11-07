@@ -1,0 +1,22 @@
+name: pr-scope
+on:
+  pull_request:
+
+jobs:
+  scope:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check scope
+        run: |
+          FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "$FILES"
+          if echo "$FILES" | grep -qvE '^(skills/|docs/|agents/|resources/|evals/|tests/|scripts/|\.github/|\.(gitignore|gitattributes)|AGENTS\.md|CHANGELOG\.md|CONTRIBUTING\.md|LICENSE|NOTICE|README\.md|UPSTREAM\.md|package\.json|plugin\.json|\.claude-plugin/|\.codex-plugin/|\.cursor-plugin/|\.agents/)'; then
+            echo "::error::PR touches files outside the allowed scopes"
+            exit 1
+          fi

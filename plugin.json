@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "qa-stack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases.",
   "author": {
     "name": "QA Stack contributors"

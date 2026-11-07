@@ -70,11 +70,13 @@ scope.
 | `qa-browser` | Core | Run /qa-browser to exercise a web app through a browser driver for QA. |
 | `qa-delegate` | Core | Run /qa-delegate to brief any subagent or teammate spawn in the QA Stack. |
 | `qa-diagnose` | Core | Run /qa-diagnose to find the root cause of a reproduced failure. |
+| `qa-drift` | Core | Run /qa-drift to check whether filed issues and their scenarios still match the code. |
 | `qa-explore` | Core | Run /qa-explore to hunt for unknown bugs under a charter. |
 | `qa-file` | Core | Run /qa-file to write and file durable GitHub issues from scoped reports. |
 | `qa-gate` | Core | Run /qa-gate to decide whether a release ships. |
 | `qa-mode` | Core | Run /qa-mode to route any QA task through the QA Stack lifecycle. |
 | `qa-regression` | Core | Run /qa-regression to lock a verified fix in place with a regression test. |
+| `qa-report` | Core | Run /qa-report to summarize QA status from evidence. |
 | `qa-repro` | Core | Run /qa-repro to reproduce a reported bug and shrink it to the smallest failing case. |
 | `qa-session` | Core | Run /qa-session to take a bug report conversationally. |
 | `qa-setup` | Core | Run /qa-setup once per project to configure the QA Stack. |

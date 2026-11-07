@@ -45,13 +45,13 @@ attached, and makes the router refuse to skip stages.
 
 ## Layout
 
-- `skills/` - 14 core skills, 9 principles, 6 playbooks under qa-mode.
+- `skills/` - 16 core skills, 9 principles, 6 playbooks under qa-mode.
 - `agents/` - 3 worker personas.
 - `resources/document_standards/` - 3 standards.
 - `scripts/` - build, validate, eval, graph, injection, regressions.
   Adapted from egm-stack, rewritten for this contract; see UPSTREAM.md.
 - `evals/` - static suites, injection fixtures, regressions, descriptions.
-- `docs/` - guides, harness adapters, this spec.
+- `docs/` - guides, harness adapters, Thai summary, this spec.
 
 ## Generated regions
 

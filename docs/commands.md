@@ -9,7 +9,7 @@ A skill is invoked by name. The form depends on the route and the host.
 - omp: `/skill:<skill>`. When a name collides with another installed pack, omp exposes it as `qa-stack/<skill>`.
 - Codex, Cursor, OpenCode: the skill picker.
 
-Fourteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.
+Sixteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.
 
 ## Core
 
@@ -20,11 +20,13 @@ Fourteen skills start with `qa-`. The other names are principles. `/qa-` filters
 | `qa-browser` | `/qa-stack:qa-browser` | `/qa-browser` | `/skill:qa-browser` | Run /qa-browser to exercise a web app through a browser driver for QA. |
 | `qa-delegate` | `/qa-stack:qa-delegate` | `/qa-delegate` | `/skill:qa-delegate` | Run /qa-delegate to brief any subagent or teammate spawn in the QA Stack. |
 | `qa-diagnose` | `/qa-stack:qa-diagnose` | `/qa-diagnose` | `/skill:qa-diagnose` | Run /qa-diagnose to find the root cause of a reproduced failure. |
+| `qa-drift` | `/qa-stack:qa-drift` | `/qa-drift` | `/skill:qa-drift` | Run /qa-drift to check whether filed issues and their scenarios still match the code. |
 | `qa-explore` | `/qa-stack:qa-explore` | `/qa-explore` | `/skill:qa-explore` | Run /qa-explore to hunt for unknown bugs under a charter. |
 | `qa-file` | `/qa-stack:qa-file` | `/qa-file` | `/skill:qa-file` | Run /qa-file to write and file durable GitHub issues from scoped reports. |
 | `qa-gate` | `/qa-stack:qa-gate` | `/qa-gate` | `/skill:qa-gate` | Run /qa-gate to decide whether a release ships. |
 | `qa-mode` | `/qa-stack:qa-mode` | `/qa-mode` | `/skill:qa-mode` | Run /qa-mode to route any QA task through the QA Stack lifecycle. |
 | `qa-regression` | `/qa-stack:qa-regression` | `/qa-regression` | `/skill:qa-regression` | Run /qa-regression to lock a verified fix in place with a regression test. |
+| `qa-report` | `/qa-stack:qa-report` | `/qa-report` | `/skill:qa-report` | Run /qa-report to summarize QA status from evidence. |
 | `qa-repro` | `/qa-stack:qa-repro` | `/qa-repro` | `/skill:qa-repro` | Run /qa-repro to reproduce a reported bug and shrink it to the smallest failing case. |
 | `qa-session` | `/qa-stack:qa-session` | `/qa-session` | `/skill:qa-session` | Run /qa-session to take a bug report conversationally. |
 | `qa-setup` | `/qa-stack:qa-setup` | `/qa-setup` | `/skill:qa-setup` | Run /qa-setup once per project to configure the QA Stack. |
