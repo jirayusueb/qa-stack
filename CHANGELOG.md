@@ -35,3 +35,9 @@
 - ADRs 0001-0004 recording the core design decisions.
 - describe-eval summary parsing fixed; live description results recorded
   (20 recorded triggers, 100% pass in two fresh-context runs).
+
+## 0.2.2
+
+- docs/artifacts.md: one-page artifact map with stage and location.
+- PNG icon exports at 16/32/64/128 px under assets/.
+- Fresh-install simulation verified (full check green from a clean copy).
