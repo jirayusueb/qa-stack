@@ -20,8 +20,8 @@ half the cap.
 
 Read the `# reply-language:` line from the config file `qa-setup` writes.
 `en` and `th` fix the reply language. `match` mirrors the language of the
-user's latest message. Unset means `en`. Artifacts stay in English; only the
-conversation reply follows the setting.
+user's latest message. Unset means `en`. Artifacts follow the config's
+`# artifact-language:` line instead; unset means `en`.
 
 ## Verbosity
 

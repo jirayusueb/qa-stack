@@ -9,6 +9,7 @@ issues, verify fixes, and gate releases.
 - [Skills](skills.md) - generated index
 - [Commands](commands.md) - generated command forms
 - [Harnesses](harness.md) - host support and the browser driver
+- [Cheatsheet](cheatsheet.md)
 - [Artifacts](artifacts.md)
 - [Evals](evals.md) - how the stack is tested
 - [Injection defense](injection.md)

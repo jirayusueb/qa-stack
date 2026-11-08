@@ -14,7 +14,10 @@ Write or update a config file at `qa-stack.config.md` in the repository root.
 Record exactly these lines, each as `# key: value`.
 
 - `# reply-language:` one of `en`, `th`, `match`. `match` mirrors the user's
-  latest message. Unset means `en`. Artifacts stay in English.
+  latest message. Unset means `en`. Artifacts follow `artifact-language`.
+- `# artifact-language:` one of `en`, `th`, `match`. The language issues,
+  reports, and specs are written in. Unset means `en`. `match` writes the
+  artifact in the language of the report that produced it.
 - `# max-spawns-per-run:` a number or `none`. The router counts every spawn,
   including retries and reviewers, and stops at the cap to ask.
 - `# execution-mode:` one of `solo`, `subagents`, `team`, `auto`. `auto`

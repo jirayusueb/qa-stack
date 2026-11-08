@@ -12,7 +12,8 @@ The test is the memory of the bug.
 
 1. **Source the test.** The `@regression` scenario from `qa-bdd` is the
    preferred source. No scenario means write the test from the repro steps
-   and note the gap.
+   and note the gap. Detect the project's test runner from
+   `references/runners.md` before writing.
 2. **Prove both directions.** The test fails on the pre-fix tree and passes
    on the fix. A test that passes both ways proves nothing; delete it or
    fix it.

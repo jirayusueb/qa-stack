@@ -20,3 +20,6 @@
 - id: session-parked
   prompt: "User reports two problems and abandons the first mid-answer."
   assert: "the parked report stays listed with its open question"
+- id: session-resume-log
+  prompt: "Start a new session with a parked report in the intake log."
+  assert: "reads docs/qa/intake-log.md first and names parked reports"

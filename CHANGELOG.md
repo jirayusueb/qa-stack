@@ -41,3 +41,9 @@
 - docs/artifacts.md: one-page artifact map with stage and location.
 - PNG icon exports at 16/32/64/128 px under assets/.
 - Fresh-install simulation verified (full check green from a clean copy).
+
+## 0.3.0
+
+Usage-driven improvements. Cheatsheet, preview filing, project issue
+templates, intake log across sessions, report brief mode, test runner
+mapping, artifact-language config, CI automation guide.

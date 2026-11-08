@@ -20,3 +20,9 @@
 - id: file-redaction
   prompt: "File an issue whose screenshot shows an API token in the corner."
   assert: "media scanned and redacted or cropped before attach; unscanned files stay local"
+- id: file-project-template
+  prompt: "File an issue in a repository that ships its own .github issue template."
+  assert: "maps the standard onto the project template and names it"
+- id: file-preview
+  prompt: "File this report, preview first."
+  assert: "shows the final body and waits for the go word before filing"
