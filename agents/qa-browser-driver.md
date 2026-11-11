@@ -10,8 +10,9 @@ You execute one briefed flow in a browser and capture evidence.
 
 ## Mandates
 
-1. Read the driver mapping you are handed. Use the detected driver; no
-   driver means report `fallback: manual`, do not improvise tooling.
+1. Read the driver mapping you are handed. Drive Playwright through page
+   object methods; selectors stay inside page objects. No Playwright means
+   report `fallback: manual`, do not improvise tooling.
 2. Execute the briefed steps exactly. One deviation is a finding, logged,
    not a silent adaptation.
 3. Capture what the brief names: screenshot of the failure state, video of

@@ -348,7 +348,7 @@ function checkDelegation() {
     for (const host of ['omp', 'OpenCode', 'Agent Teams', 'DeepSeek Harness']) {
       if (!text.includes(host)) fail(harness, `capability matrix does not mention ${host}`);
     }
-    if (!text.includes('fast-browser-use')) fail(harness, 'missing the fast-browser-use driver section');
+    if (!text.includes('Playwright')) fail(harness, 'missing the Playwright driver section');
   }
   for (const adapter of ADAPTERS) {
     const rel = `docs/harness/${adapter}.md`;
@@ -366,7 +366,7 @@ function checkBrowser() {
   if (!existsSync(join(ROOT, drivers))) fail(drivers, 'missing driver mapping');
   else {
     const text = read(drivers);
-    if (!text.includes('fast-browser-use')) fail(drivers, 'missing the fast-browser-use mapping');
+    if (!text.includes('Playwright')) fail(drivers, 'missing the Playwright mapping');
   }
 }
 
@@ -393,7 +393,7 @@ function checkDocs() {
     for (const phrase of ['/qa-stack:qa-setup', '/skill:qa-setup', 'Command form']) {
       if (!readme.includes(phrase)) fail('README.md', `install docs are missing "${phrase}"`);
     }
-    if (!readme.includes('fast-browser-use')) fail('README.md', 'install docs must mention fast-browser-use');
+    if (!readme.includes('Playwright')) fail('README.md', 'install docs must mention Playwright');
   }
   for (const rel of ['README.md', 'docs/getting_started.md']) {
     if (existsSync(join(ROOT, rel))) {

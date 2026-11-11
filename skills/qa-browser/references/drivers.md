@@ -1,39 +1,48 @@
 # Driver mapping
 
-QA Stack does not vendor a browser driver. It detects one and maps actions
-to it. The preferred driver is fast-browser-use
-(https://github.com/APUS-AI-Lab/fast-browser-use), a local-first
-browser-automation agent skill.
+QA Stack drives browsers with Playwright and structures test code with the
+Page Object Model (POM). Detect before you promise: the config from
+`qa-setup` records `# browser-driver: playwright` or `none`.
 
-## Install the preferred driver
+## Install Playwright
 
-- Skills route: `npx skills add APUS-AI-Lab/fast-browser-use`
-- Manual copy: copy its skill directory into a host skill directory,
-  project scope or user scope.
-
-Detection: the driver's skill directory or tool is present on the host.
-`qa-setup` records the result as `# browser-driver:`. Re-run `/qa-setup`
-after installing.
+- Project dev dependency: `npm install -D @playwright/test` then
+  `npx playwright install`.
+- Detect from `playwright.config.*` in the repository root.
+- `qa-setup` records the result. Re-run `/qa-setup` after installing.
 
 ## Action map
 
-| Action | fast-browser-use | Generic fallback |
-| --- | --- | --- |
-| Open | driver opens the page in its isolated space | user opens it, shares the URL |
-| Follow | driver executes the steps, one per line | user follows the steps on screen |
-| Fill | driver types the named data set | user fills from the data set |
-| Screenshot | driver captures the state | host screenshot tool, saved to evidence/ |
-| Record | driver records the flow | host screen recording, saved to evidence/ |
-| Capture console | driver reads the console log | user copies the console output |
-| Capture network | driver reads the network log | user exports the network log |
-| Compare | two recorded runs of the same flow | two manual recordings, labeled builds |
+| Action | Playwright + POM |
+| --- | --- |
+| Open | page object `open()` wrapping `page.goto()` with a named state |
+| Follow | page object methods, one per user step, in order |
+| Fill | page object `fill*()` methods taking a named data set |
+| Screenshot | `page.screenshot()` saved to `evidence/` with a caption |
+| Record | Playwright video on the context; saved to `evidence/` |
+| Capture console | `page.on('console')` and `page.on('pageerror')`, errors first |
+| Capture network | `page.on('response')`, failed responses first |
+| Compare | two recorded runs of the same flow, labeled builds |
+
+## Page Object Model rules
+
+1. Page objects live in `e2e/pages/` (or the project's existing page
+   object directory). One class or module per page or major component.
+2. Selectors never appear outside page objects. Steps, scenarios, and
+   workers call page object methods by name.
+3. Page object methods name user actions (`exportProject()`,
+   `openSettings()`), never implementation (`click('#btn-3')`).
+4. Evidence capture hooks ride in the page object base: screenshot,
+   video, console, and network helpers every page object inherits.
+5. Flows compose page object calls. A repro is a sequence of method
+   calls; the video is the same sequence recorded.
 
 ## Rules
 
 - Skill bodies never name the driver. Only this file and `docs/harness.md`
   do.
-- A missing driver is never an error. Say `fallback: manual` and hand the
-  user the steps.
+- A missing Playwright install is never an error. Say `fallback: manual`
+  and hand the user the steps.
 - Driver failures during a flow are findings: log them with the console
   capture, do not silently retry.
 - Credentials stay with the user's own browser state. Never record them.

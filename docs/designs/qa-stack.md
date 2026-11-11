@@ -38,7 +38,8 @@ attached, and makes the router refuse to skip stages.
 - **Role-neutral skills.** Every skill names input, artifact, exit
   condition. Solo, subagent, and team modes dispatch the same stages.
 - **Driver-agnostic browser actions.** Skill bodies name actions; one
-  reference maps them to fast-browser-use and a manual fallback.
+  reference maps them to Playwright with the Page Object Model and a
+  manual fallback.
 - **Rewind rule.** A request enters at its stage unless an earlier stage's
   artifact is missing; then it enters earlier. Skipping is a user decision,
   never a default.

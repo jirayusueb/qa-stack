@@ -47,3 +47,10 @@
 Usage-driven improvements. Cheatsheet, preview filing, project issue
 templates, intake log across sessions, report brief mode, test runner
 mapping, artifact-language config, CI automation guide.
+
+## 0.4.0
+
+- Browser driver switched from fast-browser-use to Playwright.
+- Page Object Model rules: selectors live inside page objects, flows
+  compose page object methods, evidence capture rides in the page object
+  base.

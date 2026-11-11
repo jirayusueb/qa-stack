@@ -11,10 +11,12 @@ tool.
 
 ## Driver
 
-The preferred driver is
-[fast-browser-use](https://github.com/APUS-AI-Lab/fast-browser-use). Install
-it, re-run `/qa-setup`, and the config records it. No driver means manual
-steps: the run hands you the flow and you record the evidence.
+The driver is Playwright, structured with the Page Object Model:
+selectors live inside page objects, flows compose page object methods,
+and evidence capture rides in the page object base. Install it as a
+project dev dependency, re-run `/qa-setup`, and the config records it. No
+Playwright means manual steps: the run hands you the flow and you record
+the evidence.
 
 ## Evidence
 

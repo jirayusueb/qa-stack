@@ -20,7 +20,7 @@ anything.
 - Do not use harness-specific tool names, absolute paths, or shell commands
   in a skill body. Describe the action; `docs/harness.md` maps it to each
   host. The only allowed exception is the driver reference file, which maps
-  actions to fast-browser-use.
+  actions to Playwright.
 - Write for a tired engineer. Short declarative sentences. No long dashes.
   Every claim carries its evidence or its label.
 - Never edit a generated region. Run `npm run build` instead. The regions

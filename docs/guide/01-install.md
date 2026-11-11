@@ -47,14 +47,15 @@ scope.
 
 ## Browser driver (optional)
 
-For web-app QA, install the preferred driver,
-[fast-browser-use](https://github.com/APUS-AI-Lab/fast-browser-use):
+For web-app QA, install Playwright in your project:
 
 ```sh
-npx skills add APUS-AI-Lab/fast-browser-use
+npm install -D @playwright/test
+npx playwright install
 ```
 
-Then re-run `/qa-setup` so the driver is detected. Without a driver the
-stack falls back to manual repro steps and says so.
+Then re-run `/qa-setup` so the driver is detected. The stack drives flows
+through the Page Object Model. Without Playwright the stack falls back to
+manual repro steps and says so.
 
 Next: [first session](02-first-session.md).

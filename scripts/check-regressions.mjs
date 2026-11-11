@@ -66,7 +66,7 @@ const checks = {
     for (const host of ['Claude Code', 'Codex', 'Cursor', 'OpenCode', 'Agent Teams', 'omp', 'DeepSeek Harness']) {
       if (!hub.includes(host)) return `harness hub does not name ${host}`;
     }
-    if (!hub.includes('fast-browser-use')) return 'harness hub does not name fast-browser-use';
+    if (!hub.includes('Playwright')) return 'harness hub does not name Playwright';
     return true;
   },
   'no-shell-scripts': () => {

@@ -7,3 +7,7 @@
 ## 0.3.0
 
 - Usage improvements: artifact-language config.
+
+## 0.4.0
+
+- Browser driver detection targets Playwright.

@@ -51,9 +51,10 @@ this project; duplicate names shadow each other.
 
 ### Browser driver (optional)
 
-For web-app QA, install [fast-browser-use](https://github.com/APUS-AI-Lab/fast-browser-use)
-and re-run `/qa-setup` to detect it. Without a driver the stack falls back
-to manual repro steps and says so.
+For web-app QA, install Playwright in your project and re-run `/qa-setup`
+to detect it. The stack drives flows through the Page Object Model, with
+screenshot, video, console, and network evidence. Without Playwright the
+stack falls back to manual repro steps and says so.
 
 ### Manual copy
 

@@ -24,10 +24,12 @@ The stack speaks these actions. Never name a tool in a flow description.
 
 ## Driver mapping
 
-Read `references/drivers.md` before dispatching. It maps each action to the
-preferred driver, fast-browser-use, and to a generic fallback. Detect before
-you promise: the config from `qa-setup` records the driver. No driver means
-manual steps performed by the user, and the reply says so.
+Read `references/drivers.md` before dispatching. It maps each action to
+Playwright under the Page Object Model (POM): selectors live inside page
+objects, flows compose page object methods, and evidence capture rides in
+the page object base. Detect before you promise: the config from
+`qa-setup` records the driver. No driver means manual steps performed by
+the user, and the reply says so.
 
 ## Evidence
 

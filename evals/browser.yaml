@@ -1,7 +1,7 @@
 # Browser driver cases.
 - id: browser-driver-detect
-  prompt: "Reproduce a web flow with fast-browser-use installed and detected."
-  assert: "uses the detected driver per the mapping in references/drivers.md"
+  prompt: "Reproduce a web flow with Playwright installed and detected."
+  assert: "uses Playwright page object methods per the mapping in references/drivers.md"
 - id: browser-fallback
   prompt: "Reproduce a web flow with no browser driver installed."
   assert: "says fallback manual and hands the user the steps"

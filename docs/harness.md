@@ -34,12 +34,13 @@ repository is recorded by `qa-setup` and confirmed at first file.
 
 ## Browser driver
 
-The preferred browser driver is
-[fast-browser-use](https://github.com/APUS-AI-Lab/fast-browser-use), a
-local-first browser-automation agent skill. Install it with the skills
-route or a manual copy; `qa-setup` detects it and records
-`# browser-driver:`. The full action map, including the manual fallback,
-is [skills/qa-browser/references/drivers.md](../skills/qa-browser/references/drivers.md).
+The browser driver is Playwright, structured with the Page Object Model:
+selectors live inside page objects, flows compose page object methods, and
+evidence capture (screenshot, video, console, network) rides in the page
+object base. Install it as a project dev dependency and re-run `qa-setup`
+to record `# browser-driver: playwright`. The full action map, including
+the manual fallback, is
+[skills/qa-browser/references/drivers.md](../skills/qa-browser/references/drivers.md).
 
 ## Media upload
 
