@@ -34,12 +34,13 @@ repository is recorded by `qa-setup` and confirmed at first file.
 
 ## Browser driver
 
-The browser driver is Playwright, structured with the Page Object Model:
-selectors live inside page objects, flows compose page object methods, and
-evidence capture (screenshot, video, console, network) rides in the page
-object base. Install it as a project dev dependency and re-run `qa-setup`
-to record `# browser-driver: playwright`. The full action map, including
-the manual fallback, is
+Two layers. The scripted layer is Playwright, structured with the Page
+Object Model: selectors live inside page objects, flows compose page
+object methods, and evidence capture (screenshot, video, console, network)
+rides in the page object base. The real-browser layer is ego lite, for
+flows that need the user's own login state; a fallback chain covers
+machines without it. Install Playwright as a project dev dependency, and
+`qa-setup` records both drivers. The full action map and fallbacks are
 [skills/qa-browser/references/drivers.md](../skills/qa-browser/references/drivers.md).
 
 ## Media upload

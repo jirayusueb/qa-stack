@@ -11,3 +11,7 @@
 ## 0.4.0
 
 - Browser driver detection targets Playwright.
+
+## 0.5.0
+
+- real-browser-driver detection and config line.

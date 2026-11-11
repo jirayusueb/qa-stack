@@ -54,3 +54,12 @@ mapping, artifact-language config, CI automation guide.
 - Page Object Model rules: selectors live inside page objects, flows
   compose page object methods, evidence capture rides in the page object
   base.
+
+## 0.5.0
+
+- Real-browser layer added: ego lite drives logged-in flows in an
+  isolated agent space reusing the user's session.
+- Layer selection rule: repeatable in CI means Playwright; real session
+  means ego lite, with a fallback chain (stored session state, then
+  manual) when absent.
+- Regression tests never ride the real-browser layer.

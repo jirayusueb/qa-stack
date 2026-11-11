@@ -24,8 +24,10 @@ Record exactly these lines, each as `# key: value`.
   detects on the next run.
 - `# issue-tracker:` the tracker identifier, for example the repository slug
   on GitHub. Unset means ask before the first file.
-- `# browser-driver:` the detected driver name or `none`. See detection
-  below.
+- `# browser-driver:` the scripted driver, `playwright` or `none`. See
+  detection below.
+- `# real-browser-driver:` the real-browser layer for logged-in flows,
+  `ego-lite` or `none`. Absent means `none`, never a mid-run install.
 
 ## Detection
 
@@ -40,10 +42,12 @@ Run these checks and record the results. Never guess a capability.
    unauthenticated tracker fails setup now, not at first file. Ask the
    user which repository receives issues when more than one candidate
    exists.
-4. **Browser driver.** Is Playwright installed? Detect it from the
-   project config, for example `playwright.config.*`. Record `playwright`
-   or `none`. Detection details live in
-   `../qa-browser/references/drivers.md`.
+4. **Browser drivers.** Scripted layer: is Playwright installed? Detect it
+   from the project config, for example `playwright.config.*`. Record
+   `playwright` or `none`. Real-browser layer: is a real-browser agent
+   browser such as ego lite installed on the machine? Record the result;
+   absent is fine and the fallback chain applies. Detection details live
+   in `../qa-browser/references/drivers.md`.
 
 ## Questions
 

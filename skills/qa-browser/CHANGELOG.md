@@ -7,3 +7,7 @@
 ## 0.4.0
 
 - Driver switched to Playwright with the Page Object Model.
+
+## 0.5.0
+
+- Real-browser layer: ego lite for logged-in flows, with fallback chain.
