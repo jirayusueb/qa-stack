@@ -37,7 +37,8 @@ note next to the file name.
 ## Parallel attempts
 
 Spawn extra attempts through `qa-delegate` when a spawn tool exists
-(`docs/harness.md`), one environment per worker, disjoint write scopes.
+(`docs/harness.md`), one environment per worker. Each attempt works in
+its own worktree from `qa-worktree`, so write scopes stay disjoint.
 Intermittent bugs especially: different seeds, different timing, same count.
 
 ## Failure to reproduce
