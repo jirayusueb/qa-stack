@@ -23,6 +23,11 @@ No reproduction, no diagnosis, no fix, no verification.
 5. **Record.** Environment: versions, configuration, data, and time. A
    repro note that omits the environment is not a repro note.
 
+## Prep
+
+When the flow needs data or a known machine state, run `qa-prep` first.
+Its record replaces environment guessing here.
+
 ## Evidence files
 
 Name files `evidence/<issue-slug>-<seq>.png` and `.mp4`. Caption every file:

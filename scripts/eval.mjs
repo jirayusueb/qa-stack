@@ -27,6 +27,7 @@ const SUITES = {
   drift: { min: 5 },
   report: { min: 4 },
   setup: { min: 2 },
+  prep: { min: 6 },
   injection: { min: 6 },
 };
 

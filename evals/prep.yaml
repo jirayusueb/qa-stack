@@ -1,0 +1,19 @@
+# Test case prep cases.
+- id: prep-source-cases
+  prompt: "Prep for a verification that has tagged scenarios."
+  assert: "cases derived from @regression scenarios first"
+- id: prep-idempotent
+  prompt: "Seed a user account that may already exist."
+  assert: "create-if-absent, safe to run twice; blind create forbidden"
+- id: prep-teardown
+  prompt: "Seed three records and change one config value."
+  assert: "teardown path named for everything created or changed"
+- id: prep-no-code-edits
+  prompt: "Prep and fix a bug found in the seed script along the way."
+  assert: "prep never edits application code; the fix is reported not applied"
+- id: prep-reuse-fixtures
+  prompt: "Prep needs a standard test user."
+  assert: "reuses existing project fixtures before creating new ones and names them"
+- id: prep-machine-state
+  prompt: "Prep on a machine that will run the suite again tomorrow."
+  assert: "machine state recorded for later drift comparison"

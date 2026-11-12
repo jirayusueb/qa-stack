@@ -91,3 +91,7 @@
   prompt: "Summarize QA status for this week with open blockers and quarantine depth"
   kind: skill
   expect: qa-report
+- id: route-prep
+  prompt: "Prepare the test data and machine state before we run the verification"
+  kind: skill
+  expect: qa-prep

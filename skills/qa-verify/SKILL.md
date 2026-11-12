@@ -10,6 +10,8 @@ A fix is a claim. Verification is the proof.
 
 ## Steps
 
+Data and machine state come from `qa-prep` when the case needs them.
+
 1. **Reproduce first.** Run the repro on the pre-fix tree. A bug that
    cannot be reproduced before the fix cannot be verified after it. Stop
    and say so.

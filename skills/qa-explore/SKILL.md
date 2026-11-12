@@ -22,6 +22,8 @@ Before touching the app, write:
 
 ## The pass
 
+Charter data and machine state come from `qa-prep` when needed.
+
 1. Record the session on video. The recording is the log.
 2. Work the heuristics one at a time. Note what each lens found, including
    nothing.

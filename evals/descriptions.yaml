@@ -163,3 +163,11 @@
   query: "write a short story about a robot"
   kind: negative
   skill: none
+- id: desc-prep-1
+  query: "prepare test cases and seed data before the run"
+  kind: positive
+  skill: qa-prep
+- id: desc-prep-2
+  query: "set up the environment idempotently for these cases"
+  kind: positive
+  skill: qa-prep

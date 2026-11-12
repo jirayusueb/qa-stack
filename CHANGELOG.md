@@ -69,3 +69,9 @@ mapping, artifact-language config, CI automation guide.
 - Setup no longer asks about or checks the issue tracker. It records
   issue-tracker: none silently and qa-file resolves the tracker at first
   file, once, from config or the tracked remote.
+
+## 0.6.0
+
+- qa-prep skill: test case preparation before a run. Cases from scenarios
+  or repro steps, idempotent seed data, machine state record, teardown
+  path. Consumed by qa-repro, qa-verify, and qa-explore.

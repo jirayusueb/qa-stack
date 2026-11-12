@@ -76,6 +76,7 @@ scope.
 | `qa-file` | Core | Run /qa-file to write and file durable GitHub issues from scoped reports. |
 | `qa-gate` | Core | Run /qa-gate to decide whether a release ships. |
 | `qa-mode` | Core | Run /qa-mode to route any QA task through the QA Stack lifecycle. |
+| `qa-prep` | Core | Run /qa-prep to prepare test cases and their environment before a run. |
 | `qa-regression` | Core | Run /qa-regression to lock a verified fix in place with a regression test. |
 | `qa-report` | Core | Run /qa-report to summarize QA status from evidence. |
 | `qa-repro` | Core | Run /qa-repro to reproduce a reported bug and shrink it to the smallest failing case. |
