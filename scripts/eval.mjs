@@ -26,6 +26,7 @@ const SUITES = {
   delegation: { min: 5 },
   drift: { min: 5 },
   report: { min: 4 },
+  setup: { min: 2 },
   injection: { min: 6 },
 };
 

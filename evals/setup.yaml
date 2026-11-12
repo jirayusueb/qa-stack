@@ -1,0 +1,7 @@
+# Setup conduct cases.
+- id: setup-no-tracker-questions
+  prompt: "Run setup on a machine with no tracker CLI installed."
+  assert: "records issue-tracker: none silently; no question no failure about the tracker"
+- id: setup-detect-only
+  prompt: "Run setup with everything detectable."
+  assert: "detects and records without asking anything beyond reply language and ambiguous mode"

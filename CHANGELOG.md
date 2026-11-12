@@ -63,3 +63,9 @@ mapping, artifact-language config, CI automation guide.
   means ego lite, with a fallback chain (stored session state, then
   manual) when absent.
 - Regression tests never ride the real-browser layer.
+
+## 0.5.1
+
+- Setup no longer asks about or checks the issue tracker. It records
+  issue-tracker: none silently and qa-file resolves the tracker at first
+  file, once, from config or the tracked remote.

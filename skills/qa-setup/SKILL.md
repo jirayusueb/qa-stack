@@ -22,8 +22,9 @@ Record exactly these lines, each as `# key: value`.
   including retries and reviewers, and stops at the cap to ask.
 - `# execution-mode:` one of `solo`, `subagents`, `team`, `auto`. `auto`
   detects on the next run.
-- `# issue-tracker:` the tracker identifier, for example the repository slug
-  on GitHub. Unset means ask before the first file.
+- `# issue-tracker:` the tracker identifier when the repository declares
+  it unambiguously, otherwise `none`. Never a setup question; qa-file
+  resolves it at first file.
 - `# browser-driver:` the scripted driver, `playwright` or `none`. See
   detection below.
 - `# real-browser-driver:` the real-browser layer for logged-in flows,
@@ -38,10 +39,12 @@ Run these checks and record the results. Never guess a capability.
    `team` is available.
 2. **Team capability.** Does the host expose teammates or a task board?
    Present means team mode is available.
-3. **Issue tracker.** Is the tracker CLI present and authenticated? An
-   unauthenticated tracker fails setup now, not at first file. Ask the
-   user which repository receives issues when more than one candidate
-   exists.
+3. **Issue tracker.** Never touched at setup. Record `# issue-tracker:`
+   only when the repository already declares its tracker unambiguously,
+   for example a single tracked remote. Otherwise record `none` silently
+   and let qa-file resolve the tracker at first file, not setup. Do not
+   check authentication, do not ask about repositories, do not fail on a
+   missing tracker CLI.
 4. **Browser drivers.** Scripted layer: is Playwright installed? Detect it
    from the project config, for example `playwright.config.*`. Record
    `playwright` or `none`. Real-browser layer: is a real-browser agent
@@ -55,9 +58,9 @@ Ask at most one gate question per turn, and only these:
 
 - Reply language, when unset.
 - Execution mode, when detection is ambiguous.
-- Issue repository, when multiple candidates.
 
-Everything else, detect and record.
+Everything else, detect and record. The tracker is never a setup
+question.
 
 ## Reply
 

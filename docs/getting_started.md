@@ -9,8 +9,9 @@ Five minutes to your first evidence-backed issue.
    npx skills add jirayusueb/qa-stack
    ```
 
-2. Run `/qa-setup` once. It detects the spawn capability, the issue
-   tracker, and the browser driver, and records your reply language.
+2. Run `/qa-setup` once. It detects the spawn capability and the browser
+   drivers, and records your reply language. The issue tracker is never
+   asked about at setup; it resolves at first file.
 
 3. Run `/qa-mode` and describe the problem. The router finds where your
    request enters the lifecycle:

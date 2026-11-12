@@ -15,3 +15,7 @@
 ## 0.5.0
 
 - real-browser-driver detection and config line.
+
+## 0.5.1
+
+- Setup never asks about the issue tracker; resolution moved to first file.

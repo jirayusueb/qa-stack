@@ -55,6 +55,13 @@ parallelizable. File in dependency order so Blocked by cites real numbers.
 <media for this slice>
 ```
 
+## Tracker resolution
+
+Resolve the issue tracker at first file, never at setup. Order: the
+config's `# issue-tracker:` line when set, else the repository's single
+tracked remote, else one question naming the candidates. Resolution is
+recorded in the config so it is asked once, ever.
+
 ## Project templates
 
 A repository may carry its own issue templates. If it does, map this
