@@ -46,7 +46,7 @@ attached, and makes the router refuse to skip stages.
 
 ## Layout
 
-- `skills/` - 17 core skills, 9 principles, 6 playbooks under qa-mode.
+- `skills/` - 18 core skills, 9 principles, 6 playbooks under qa-mode.
 - `agents/` - 3 worker personas.
 - `resources/document_standards/` - 3 standards.
 - `scripts/` - build, validate, eval, graph, injection, regressions.

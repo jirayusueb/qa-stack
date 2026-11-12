@@ -28,6 +28,7 @@ const SUITES = {
   report: { min: 4 },
   setup: { min: 2 },
   prep: { min: 6 },
+  worktree: { min: 6 },
   injection: { min: 6 },
 };
 

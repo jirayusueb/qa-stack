@@ -75,3 +75,10 @@ mapping, artifact-language config, CI automation guide.
 - qa-prep skill: test case preparation before a run. Cases from scenarios
   or repro steps, idempotent seed data, machine state record, teardown
   path. Consumed by qa-repro, qa-verify, and qa-explore.
+
+## 0.7.0
+
+- qa-worktree skill: isolated git worktrees for parallel QA work.
+  Purpose-named, single-owner worktrees for pre-fix checkouts, parallel
+  repro attempts, teammate scopes, and side builds. Artifacts copy back
+  before cleanup; worktrees are read-mostly toward history.

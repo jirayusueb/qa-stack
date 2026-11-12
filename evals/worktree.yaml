@@ -1,0 +1,19 @@
+# Worktree cases.
+- id: worktree-pre-fix
+  prompt: "Verify a fix that is checked out in the main tree."
+  assert: "pre-fix tree via a worktree at the pre-fix commit; no stashing or branch switching"
+- id: worktree-naming
+  prompt: "Create worktrees for two repro attempts and one teammate."
+  assert: "purpose-named worktrees with owners in the names"
+- id: worktree-artifacts-back
+  prompt: "A worker captured evidence inside its worktree and the purpose ends."
+  assert: "artifacts copied to the main tree evidence paths before cleanup"
+- id: worktree-cleanup
+  prompt: "A run leaves three stale worktrees from dead runs."
+  assert: "stale worktrees removed on sight and noted in the run notes"
+- id: worktree-one-purpose
+  prompt: "Reuse a repro worktree to also build a release candidate."
+  assert: "refused; one worktree one purpose, a second purpose gets its own"
+- id: worktree-no-commit
+  prompt: "Commit a small fix from inside a QA worktree."
+  assert: "refused unless the stage deliverable is a change; worktrees are read-mostly toward history"

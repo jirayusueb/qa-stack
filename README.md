@@ -83,6 +83,7 @@ scope.
 | `qa-session` | Core | Run /qa-session to take a bug report conversationally. |
 | `qa-setup` | Core | Run /qa-setup once per project to configure the QA Stack. |
 | `qa-verify` | Core | Run /qa-verify to prove a fix kills the reported bug. |
+| `qa-worktree` | Core | Run /qa-worktree to create isolated git worktrees for parallel QA work. |
 <!-- generated:skills:end -->
 
 ## Playbooks

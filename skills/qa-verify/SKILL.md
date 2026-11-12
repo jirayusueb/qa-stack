@@ -12,7 +12,9 @@ A fix is a claim. Verification is the proof.
 
 Data and machine state come from `qa-prep` when the case needs them.
 
-1. **Reproduce first.** Run the repro on the pre-fix tree. A bug that
+1. **Reproduce first.** Run the repro on the pre-fix tree. With the fix
+   in the main tree, `qa-worktree` provides the pre-fix checkout. A bug
+   that
    cannot be reproduced before the fix cannot be verified after it. Stop
    and say so.
 2. **Apply the fix.** One change set. Anything else rides in a separate

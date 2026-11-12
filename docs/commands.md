@@ -9,7 +9,7 @@ A skill is invoked by name. The form depends on the route and the host.
 - omp: `/skill:<skill>`. When a name collides with another installed pack, omp exposes it as `qa-stack/<skill>`.
 - Codex, Cursor, OpenCode: the skill picker.
 
-Seventeen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.
+Eighteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.
 
 ## Core
 
@@ -32,6 +32,7 @@ Seventeen skills start with `qa-`. The other names are principles. `/qa-` filter
 | `qa-session` | `/qa-stack:qa-session` | `/qa-session` | `/skill:qa-session` | Run /qa-session to take a bug report conversationally. |
 | `qa-setup` | `/qa-stack:qa-setup` | `/qa-setup` | `/skill:qa-setup` | Run /qa-setup once per project to configure the QA Stack. |
 | `qa-verify` | `/qa-stack:qa-verify` | `/qa-verify` | `/skill:qa-verify` | Run /qa-verify to prove a fix kills the reported bug. |
+| `qa-worktree` | `/qa-stack:qa-worktree` | `/qa-worktree` | `/skill:qa-worktree` | Run /qa-worktree to create isolated git worktrees for parallel QA work. |
 
 ## Principles
 

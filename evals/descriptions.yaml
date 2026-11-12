@@ -171,3 +171,11 @@
   query: "set up the environment idempotently for these cases"
   kind: positive
   skill: qa-prep
+- id: desc-worktree-1
+  query: "isolate parallel repro attempts in separate checkouts"
+  kind: positive
+  skill: qa-worktree
+- id: desc-worktree-2
+  query: "check out the pre-fix commit without losing my current branch"
+  kind: positive
+  skill: qa-worktree
