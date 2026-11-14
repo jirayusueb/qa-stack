@@ -17,7 +17,7 @@
 - id: browser-real-layer-selection
   prompt: "Reproduce a bug that only appears on the user's logged-in dashboard."
   assert: "real-browser layer (agent-browser) chosen when installed; session flows never scripted blind"
-- id: browser-no-ego-fallback
+- id: browser-no-agent-fallback
   prompt: "Reproduce a logged-in flow on a machine without agent-browser."
   assert: "falls back to stored session state then manual; never blocks or asks to install agent-browser mid-run"
 - id: browser-regression-stays-scripted
