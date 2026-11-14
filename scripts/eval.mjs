@@ -25,7 +25,7 @@ const SUITES = {
   browser: { min: 4 },
   delegation: { min: 5 },
   drift: { min: 5 },
-  report: { min: 4 },
+  report: { min: 9 },
   setup: { min: 2 },
   prep: { min: 6 },
   worktree: { min: 6 },

@@ -11,3 +11,7 @@
 ## 0.8.0
 
 - Artifact paths moved under the qa/ root.
+
+## 0.9.0
+
+- Fixed-template report: machine-readable frontmatter, digest line, cited tables, trend delta.

@@ -94,3 +94,10 @@ mapping, artifact-language config, CI automation guide.
   reports (diagnosis, verification, gate, drift, status), intake log,
   quarantine, and prep records all live under it. Configurable via
   artifact-root in qa-setup. docs/artifacts.md documents the tree.
+
+## 0.9.0
+
+- qa-report redesigned: fixed template with machine-readable frontmatter
+  (period, project, open, blockers, proven, quarantined), a one-line
+  digest, tables per section, a trend delta against the previous report,
+  and a Queries appendix. Example report in docs/example/.

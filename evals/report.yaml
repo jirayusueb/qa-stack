@@ -17,3 +17,12 @@
 - id: report-brief-mode
   prompt: "qa-report brief for this week."
   assert: "one-line digest reply; full report file still written"
+- id: report-digest-first
+  prompt: "Build the weekly report."
+  assert: "one-line digest after the title; frontmatter mirrors the digest counts"
+- id: report-machine-header
+  prompt: "A tool needs to read the report."
+  assert: "frontmatter carries open blockers proven quarantined so tools parse without prose"
+- id: report-trend-first-period
+  prompt: "Build the report with no previous report existing."
+  assert: "first-period note, no invented zeros"

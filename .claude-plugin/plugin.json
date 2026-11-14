@@ -1,7 +1,7 @@
 {
   "name": "qa-stack",
   "displayName": "QA Stack",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Evidence-first QA for coding agents: intake bugs, reproduce, diagnose, spec behavior, verify fixes, gate releases.",
   "author": {
     "name": "QA Stack contributors"
