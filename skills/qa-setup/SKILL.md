@@ -28,7 +28,7 @@ Record exactly these lines, each as `# key: value`.
 - `# browser-driver:` the scripted driver, `playwright` or `none`. See
   detection below.
 - `# real-browser-driver:` the real-browser layer for logged-in flows,
-  `ego-lite` or `none`. Absent means `none`, never a mid-run install.
+  `agent-browser` or `none`. Absent means `none`, never a mid-run install.
 
 ## Detection
 
@@ -48,9 +48,9 @@ Run these checks and record the results. Never guess a capability.
 4. **Browser drivers.** Scripted layer: is Playwright installed? Detect it
    from the project config, for example `playwright.config.*`. Record
    `playwright` or `none`. Real-browser layer: is a real-browser agent
-   browser such as ego lite installed on the machine? Record the result;
-   absent is fine and the fallback chain applies. Detection details live
-   in `../qa-browser/references/drivers.md`.
+   browser such as agent-browser installed on the machine? Record the
+   result; absent is fine and the fallback chain applies. Detection
+   details live in `../qa-browser/references/drivers.md`.
 
 ## Questions
 

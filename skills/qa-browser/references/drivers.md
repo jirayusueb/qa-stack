@@ -1,9 +1,9 @@
 # Driver mapping
 
 Two layers. Playwright with the Page Object Model drives scripted,
-repeatable flows. The real-browser layer, ego lite, drives flows that need
-the user's real login state. Detect before you promise: the config from
-`qa-setup` records `# browser-driver: playwright` and
+repeatable flows. The real-browser layer, agent-browser, drives flows
+that need the user's real login state. Detect before you promise: the
+config from `qa-setup` records `# browser-driver: playwright` and
 `# real-browser-driver:` (an installed real-browser driver or `none`).
 
 ## Layer choice
@@ -13,11 +13,11 @@ Ask what the flow needs:
 - Repeatable in CI, deterministic, or feeds a regression test:
   Playwright.
 - Needs the user's real session: logged-in flows, account-specific data,
-  SSO or 2FA behind the door: ego lite when installed, else the fallback
-  chain below.
+  SSO or 2FA behind the door: agent-browser when installed, else the
+  fallback chain below.
 - No driver at all: manual steps, `fallback: manual`.
 
-Fallback chain when a real-session flow has no ego lite, in order:
+Fallback chain when a real-session flow has no agent-browser, in order:
 
 1. Playwright with a stored session state, exported once, reused without
    touching credentials.
@@ -60,15 +60,15 @@ mid-run. Record `real-browser-driver: none` in the config and move on.
 5. Flows compose page object calls. A repro is a sequence of method
    calls; the video is the same sequence recorded.
 
-## Real-browser layer: ego lite
+## Real-browser layer: agent-browser
 
-ego lite is a Chromium-based browser built for agent use: the agent works
-in its own isolated space while reusing the user's login state. It fits
-the actions that need a real session. Install follows the ego-browser
+agent-browser is a browser built for agent use: the agent works in its
+own isolated space while reusing the user's login state. It fits the
+actions that need a real session. Install follows the agent-browser
 project's own instructions; `qa-setup` detects it and records
-`# real-browser-driver: ego-lite`.
+`# real-browser-driver: agent-browser`.
 
-| Action | ego lite |
+| Action | agent-browser |
 | --- | --- |
 | Open | open the page in the agent space with the user's session |
 | Follow | agent executes the steps in the isolated space |

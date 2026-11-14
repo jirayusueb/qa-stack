@@ -82,3 +82,8 @@ mapping, artifact-language config, CI automation guide.
   Purpose-named, single-owner worktrees for pre-fix checkouts, parallel
   repro attempts, teammate scopes, and side builds. Artifacts copy back
   before cleanup; worktrees are read-mostly toward history.
+
+## 0.7.1
+
+- Real-browser layer switched from ego lite to agent-browser. Same
+  isolation and session-reuse contract, same fallback chain.

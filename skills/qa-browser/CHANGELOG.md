@@ -11,3 +11,7 @@
 ## 0.5.0
 
 - Real-browser layer: ego lite for logged-in flows, with fallback chain.
+
+## 0.7.1
+
+- Real-browser layer switched from ego lite to agent-browser.

@@ -16,12 +16,12 @@ selectors live inside page objects, flows compose page object methods,
 and evidence capture rides in the page object base. Install it as a
 project dev dependency, re-run `/qa-setup`, and the config records it.
 
-The real-browser layer is ego lite, for flows that need the user's real
-login state: logged-in accounts, SSO, account-specific data. The agent
-works in its own isolated space and reuses the session, so credentials
-never enter the run. Without ego lite the fallback chain applies:
-Playwright with a stored session state, then manual steps. No driver
-means manual steps: the run hands you the flow and you record the
+The real-browser layer is agent-browser, for flows that need the user's
+real login state: logged-in accounts, SSO, account-specific data. The
+agent works in its own isolated space and reuses the session, so
+credentials never enter the run. Without agent-browser the fallback chain
+applies: Playwright with a stored session state, then manual steps. No
+driver means manual steps: the run hands you the flow and you record the
 evidence.
 
 ## Evidence

@@ -19,3 +19,7 @@
 ## 0.5.1
 
 - Setup never asks about the issue tracker; resolution moved to first file.
+
+## 0.7.1
+
+- real-browser-driver records agent-browser.

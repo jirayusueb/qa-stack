@@ -367,7 +367,7 @@ function checkBrowser() {
   else {
     const text = read(drivers);
     if (!text.includes('Playwright')) fail(drivers, 'missing the Playwright mapping');
-    if (!text.includes('ego lite')) fail(drivers, 'missing the real-browser layer mapping');
+    if (!text.includes('agent-browser')) fail(drivers, 'missing the real-browser layer mapping');
   }
 }
 
