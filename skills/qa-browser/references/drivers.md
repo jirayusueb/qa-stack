@@ -41,8 +41,8 @@ mid-run. Record `real-browser-driver: none` in the config and move on.
 | Open | page object `open()` wrapping `page.goto()` with a named state |
 | Follow | page object methods, one per user step, in order |
 | Fill | page object `fill*()` methods taking a named data set |
-| Screenshot | `page.screenshot()` saved to `evidence/` with a caption |
-| Record | Playwright video on the context; saved to `evidence/` |
+| Screenshot | `page.screenshot()` saved to `qa/evidence/` with a caption |
+| Record | Playwright video on the context; saved to `qa/evidence/` |
 | Capture console | `page.on('console')` and `page.on('pageerror')`, errors first |
 | Capture network | `page.on('response')`, failed responses first |
 | Compare | two recorded runs of the same flow, labeled builds |
@@ -73,7 +73,7 @@ project's own instructions; `qa-setup` detects it and records
 | Open | open the page in the agent space with the user's session |
 | Follow | agent executes the steps in the isolated space |
 | Fill | agent fills from the named data set |
-| Screenshot | agent captures the state, saved to `evidence/` |
+| Screenshot | agent captures the state, saved to `qa/evidence/` |
 | Record | agent records the flow in the space |
 | Capture console | agent reads the console, errors first |
 | Capture network | agent reads the network log, failures first |

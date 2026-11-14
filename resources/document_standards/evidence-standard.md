@@ -27,7 +27,7 @@ resolved explicitly, never averaged away.
 - A visual bug carries a screenshot of the failure state.
 - A flow or timing bug carries a screen recording of the flow.
 - Every media file is captioned: what it shows, when captured, which build.
-- Files are named `evidence/<issue-slug>-<seq>.png` or `.mp4`.
+- Files are named `qa/evidence/<issue-slug>-<seq>.png` or `.mp4`.
 - Media attaches to the issue and the body links it.
 - Browser evidence rides with its console and network captures.
 
@@ -35,7 +35,7 @@ resolved explicitly, never averaged away.
 
 Media is scanned for secrets before it leaves the repository: tokens,
 credentials, personal data visible in frames. Redact or crop, then attach.
-An unscanned file does not attach. Review `evidence/` again before
+An unscanned file does not attach. Review `qa/evidence/` again before
 publishing the repository.
 
 ## Research before writing

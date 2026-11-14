@@ -33,7 +33,7 @@ performed by the user, and the reply says so.
 
 ## Evidence
 
-- Every file lands under `evidence/` with the naming convention
+- Every file lands under `qa/evidence/` with the naming convention
   `<slug>-<seq>.png` or `.mp4`.
 - Every file carries a caption: what it shows, when captured, which build.
 - Console and network captures ride next to the media they explain.

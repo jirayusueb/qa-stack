@@ -28,7 +28,7 @@ One worktree, one purpose, one owner. The main tree stays untouched.
    `qa-repro-<attempt>`, `qa-<member>`. The name says the owner.
 2. Worktrees live outside the main tree, never nested inside it.
 3. Evidence, reports, and artifacts write back to the main tree's
-   `evidence/` and `docs/` paths, or are copied there before cleanup. A
+   `qa/evidence/` and `qa/reports/` paths, or are copied there before cleanup. A
    finding that lives only in a deleted worktree is a lost finding.
 4. One worktree is one purpose. A second purpose is a second worktree.
 5. Clean up when the purpose ends: remove the worktree, say so in the
