@@ -9,7 +9,7 @@ A skill is invoked by name. The form depends on the route and the host.
 - omp: `/skill:<skill>`. When a name collides with another installed pack, omp exposes it as `qa-stack/<skill>`.
 - Codex, Cursor, OpenCode: the skill picker.
 
-Eighteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.
+Nineteen skills start with `qa-`. The other names are principles. `/qa-` filters by name prefix, not by package.
 
 ## Core
 
@@ -25,6 +25,7 @@ Eighteen skills start with `qa-`. The other names are principles. `/qa-` filters
 | `qa-file` | `/qa-stack:qa-file` | `/qa-file` | `/skill:qa-file` | Run /qa-file to write and file durable GitHub issues from scoped reports. |
 | `qa-gate` | `/qa-stack:qa-gate` | `/qa-gate` | `/skill:qa-gate` | Run /qa-gate to decide whether a release ships. |
 | `qa-mode` | `/qa-stack:qa-mode` | `/qa-mode` | `/skill:qa-mode` | Run /qa-mode to route any QA task through the QA Stack lifecycle. |
+| `qa-plan` | `/qa-stack:qa-plan` | `/qa-plan` | `/skill:qa-plan` | Run /qa-plan to write the plan for a test cycle before it runs. |
 | `qa-prep` | `/qa-stack:qa-prep` | `/qa-prep` | `/skill:qa-prep` | Run /qa-prep to prepare test cases and their environment before a run. |
 | `qa-regression` | `/qa-stack:qa-regression` | `/qa-regression` | `/skill:qa-regression` | Run /qa-regression to lock a verified fix in place with a regression test. |
 | `qa-report` | `/qa-stack:qa-report` | `/qa-report` | `/skill:qa-report` | Run /qa-report to summarize QA status from evidence. |

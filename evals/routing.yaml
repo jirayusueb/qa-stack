@@ -99,3 +99,7 @@
   prompt: "Give each parallel repro attempt its own checkout without touching my working tree"
   kind: skill
   expect: qa-worktree
+- id: route-plan
+  prompt: "Write the test plan for next week's release cycle before we run anything"
+  kind: skill
+  expect: qa-plan

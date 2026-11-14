@@ -101,3 +101,10 @@ mapping, artifact-language config, CI automation guide.
   (period, project, open, blockers, proven, quarantined), a one-line
   digest, tables per section, a trend delta against the previous report,
   and a Queries appendix. Example report in docs/example/.
+
+## 0.10.0
+
+- qa-plan skill: the test plan as a cycle contract. Fixed template with
+  machine-readable header, scope in and out, cases cited to their
+  sources, environment references, risks, measurable exit criteria, and
+  an amendment log. Example plan in docs/example/.

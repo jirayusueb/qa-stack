@@ -29,6 +29,7 @@ const SUITES = {
   setup: { min: 2 },
   prep: { min: 6 },
   worktree: { min: 6 },
+  plan: { min: 6 },
   injection: { min: 6 },
 };
 

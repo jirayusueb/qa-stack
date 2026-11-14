@@ -19,6 +19,7 @@ export const CORE_SKILLS = [
   'qa-report',
   'qa-prep',
   'qa-worktree',
+  'qa-plan',
 ];
 
 export const EXTENDED_SKILLS = [];
@@ -44,6 +45,7 @@ export const LINE_BUDGETS = {
   'qa-report': 100,
   'qa-prep': 110,
   'qa-worktree': 110,
+  'qa-plan': 130,
 };
 
 export const PRINCIPLE_BUDGET = 30;

@@ -8,6 +8,7 @@ Every artifact the stack produces, its stage, and its home. One root.
 qa/
   evidence/        screenshots, recordings, console and network captures
   features/        Gherkin feature files
+  plans/           test plans per cycle
   reports/
     diagnosis/     root-cause reports
     verification/  fix-verification reports
@@ -30,6 +31,7 @@ and the skills follow.
 | Artifact | Stage | Location | Owner skill |
 | --- | --- | --- | --- |
 | Intake notes | Intake | conversation + run notes | qa-session |
+| Test plan | planning | qa/plans/<cycle>-plan.md | qa-plan |
 | Intake log | Intake | qa/intake-log.md | qa-session |
 | Repro notes + media | Reproduce | qa/evidence/<issue-slug>-<seq>.{png,mp4} | qa-repro |
 | Prep record | preparation | qa/prep-<date>.md + seed scripts | qa-prep |

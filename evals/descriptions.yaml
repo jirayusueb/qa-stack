@@ -179,3 +179,11 @@
   query: "check out the pre-fix commit without losing my current branch"
   kind: positive
   skill: qa-worktree
+- id: desc-plan-1
+  query: "write the test plan for this cycle"
+  kind: positive
+  skill: qa-plan
+- id: desc-plan-2
+  query: "define scope and exit criteria before the test run"
+  kind: positive
+  skill: qa-plan

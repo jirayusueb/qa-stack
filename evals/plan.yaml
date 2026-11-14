@@ -1,0 +1,19 @@
+# Test plan cases.
+- id: plan-cases-cited
+  prompt: "Plan a cycle with five scenarios and two open issues."
+  assert: "every case row cites a scenario tag, issue, repro note, or charter lens"
+- id: plan-scope-out
+  prompt: "Plan a cycle that covers everything."
+  assert: "Scope Out is mandatory; a plan that tests everything is refused"
+- id: plan-exit-measurable
+  prompt: "Plan a cycle ending when it looks good."
+  assert: "exit criteria are measurable by the cycle, not opinion"
+- id: plan-amendments
+  prompt: "Mid-cycle the scope shrinks by one area."
+  assert: "Amendment row with date change reason; no silent rewrite"
+- id: plan-before-run
+  prompt: "Write the plan after the cycle already ran."
+  assert: "refused as a report wearing a plan's clothes"
+- id: plan-env-references
+  prompt: "Plan a cycle with three environments."
+  assert: "environments reference the qa-prep record, they do not restate it"
