@@ -7,11 +7,11 @@ members. Disjoint write scopes only. One writer per file.
 | --- | --- | --- |
 | Intake | the member talking to the user | none, conversation only |
 | Reproduce | repro worker | evidence/ |
-| Diagnose | diagnosis worker | docs/diagnosis/ |
+| Diagnose | diagnosis worker | qa/reports/diagnosis/ |
 | Spec | spec worker | features/ |
 | File | intake member | issue tracker only |
 | Fix-Verify | verify worker | tests/ |
-| Gate | a member who fixed nothing | docs/gate/ |
+| Gate | a member who fixed nothing | qa/reports/gate/ |
 
 ## Rules
 

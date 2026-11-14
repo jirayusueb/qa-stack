@@ -20,6 +20,6 @@ writing the test. Never assume a runner.
   No custom config just for the regression.
 - The issue number reaches the test name or tag so a failure traces back.
 - Quarantined tests use the runner's native skip or focus mechanism plus
-  the quarantine row in `docs/qa/quarantine.md`.
+  the quarantine row in `qa/quarantine.md`.
 - An unknown runner means ask which command runs the suite, then record it
   here for the project.

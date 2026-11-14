@@ -30,7 +30,7 @@ Its record replaces environment guessing here.
 
 ## Evidence files
 
-Name files `evidence/<issue-slug>-<seq>.png` and `.mp4`. Caption every file:
+Name files `qa/evidence/<issue-slug>-<seq>.png` and `.mp4`. Caption every file:
 what it shows, when captured, which build. The caption lives in the repro
 note next to the file name.
 

@@ -11,3 +11,7 @@
 ## 0.5.1
 
 - Tracker resolution at first file, recorded once in config.
+
+## 0.8.0
+
+- Artifact paths moved under the qa/ root.

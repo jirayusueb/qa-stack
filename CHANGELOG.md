@@ -87,3 +87,10 @@ mapping, artifact-language config, CI automation guide.
 
 - Real-browser layer switched from ego lite to agent-browser. Same
   isolation and session-reuse contract, same fallback chain.
+
+## 0.8.0
+
+- Single artifact root in the consuming project: qa/. Evidence, features,
+  reports (diagnosis, verification, gate, drift, status), intake log,
+  quarantine, and prep records all live under it. Configurable via
+  artifact-root in qa-setup. docs/artifacts.md documents the tree.

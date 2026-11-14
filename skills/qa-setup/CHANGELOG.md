@@ -23,3 +23,7 @@
 ## 0.7.1
 
 - real-browser-driver records agent-browser.
+
+## 0.8.0
+
+- Artifact paths moved under the qa/ root.

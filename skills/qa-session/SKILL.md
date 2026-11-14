@@ -28,7 +28,7 @@ Intake. Listen first, file later.
 
 - One report at a time. Each report finishes or is parked with its open
   question before the next starts.
-- Parked reports are logged in `docs/qa/intake-log.md`: one line per
+- Parked reports are logged in `qa/intake-log.md`: one line per
   report, its open question, and its status. A new session resumes from
   the log; say what is parked before taking a new report.
 - The user says done, not silence.

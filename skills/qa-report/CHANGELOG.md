@@ -7,3 +7,7 @@
 ## 0.3.0
 
 - Usage improvements: brief digest mode.
+
+## 0.8.0
+
+- Artifact paths moved under the qa/ root.

@@ -7,3 +7,7 @@
 ## 0.7.0
 
 - Parallel attempts use qa-worktree for disjoint checkouts.
+
+## 0.8.0
+
+- Artifact paths moved under the qa/ root.

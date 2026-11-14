@@ -7,3 +7,7 @@
 ## 0.7.0
 
 - Pre-fix tree provided by qa-worktree when the fix is checked out.
+
+## 0.8.0
+
+- Artifact paths moved under the qa/ root.

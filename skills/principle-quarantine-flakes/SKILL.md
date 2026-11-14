@@ -9,7 +9,7 @@ license: Apache-2.0
 A flake is a bug in the test or the system, not noise. Retry-until-green
 destroys the suite's meaning.
 
-- Mark it, add its row to `docs/qa/quarantine.md`, record the trigger.
+- Mark it, add its row to `qa/quarantine.md`, record the trigger.
 - Every quarantined test carries an open question.
 - Quarantine is triage, not a parking lot.
 - No release carries an untriaged flake.

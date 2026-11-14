@@ -15,3 +15,7 @@
 ## 0.7.1
 
 - Real-browser layer switched from ego lite to agent-browser.
+
+## 0.8.0
+
+- Artifact paths moved under the qa/ root.

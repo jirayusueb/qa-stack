@@ -22,6 +22,9 @@ Record exactly these lines, each as `# key: value`.
   including retries and reviewers, and stops at the cap to ask.
 - `# execution-mode:` one of `solo`, `subagents`, `team`, `auto`. `auto`
   detects on the next run.
+- `# artifact-root:` the root folder for stack artifacts in this project.
+  Default `qa/`. Move it when tooling expects other locations; paths
+  below the root stay the same.
 - `# issue-tracker:` the tracker identifier when the repository declares
   it unambiguously, otherwise `none`. Never a setup question; qa-file
   resolves it at first file.
